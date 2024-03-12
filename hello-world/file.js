@@ -4,8 +4,15 @@ const fs = require("fs");
 fs.writeFileSync("./text.txt", "Hey Node.js 1.0");
 
 
-Async
+// Async
 fs.writeFile("./text.txt", "Hey Node.js 2.0", (err) => { });
+
+// sync
+fs.writeFileSync("./newtext.txt", "Hey Node.js 1.0");
+
+
+// Async
+fs.writeFile("./newtext.txt", "Hey Node.js 2.0", (err) => { });
 
 
 // read from contacts.txt 
